@@ -1,0 +1,50 @@
+@import '../../node_modules/swiper/swiper-bundle';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap' );
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap' );
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    color: #222220;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container { 
+    max-width: 1606px;
+    margin: 0 auto; 
+    padding: 0 16px;    
+    @media (max-width: 991.98px) {  
+        padding: 0 32px;  
+    }
+    @media (max-width: 767.98px) {        
+        max-width: none;
+        padding: 0 16px;
+    }  
+}
+
+a {
+    text-decoration: none;
+    transition: transform 0.8s ease 0s;   
+    &:hover {
+        color: #be85a8;  
+        transition: ease 0.7s;
+        transform: scale(1.1);        
+    }
+}
